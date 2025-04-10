@@ -173,17 +173,22 @@
             e.preventDefault(); // Disables right-click
         });
 
-	function showCharacterInfo(characterId) {
+function showCharacterInfo(characterId) {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'none';
-    document.querySelector('.intro-text').style.display = 'none'; // Hide intro text
+    
+    let intro = document.querySelector('.intro-text');
+    if (intro) intro.style.display = 'none';  // Ensure the intro text hides
+    
     document.getElementById(characterId).style.display = 'block';
 }
 
 function goBack() {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'block';
-    document.querySelector('.intro-text').style.display = 'block'; // Show intro text again
+    
+    let intro = document.querySelector('.intro-text');
+    if (intro) intro.style.display = 'block';  // Ensure it reappears
 }
     </script>
 </head>
