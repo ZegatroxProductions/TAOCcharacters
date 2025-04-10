@@ -173,16 +173,6 @@
             e.preventDefault(); // Disables right-click
         });
 
-        function showCharacterInfo(characterId) {
-            document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-            document.querySelector('.main-page').style.display = 'none';
-            document.getElementById(characterId).style.display = 'block';
-        }
-
-        function goBack() {
-            document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-            document.querySelector('.main-page').style.display = 'block';
-        }
 	function showCharacterInfo(characterId) {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'none';
