@@ -114,7 +114,7 @@
         }
 	    
 	.intro-text {
-    display: block;  /* Ensure it's visible on page load */
+    display: visible;  /* Ensure it's visible on page load */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -182,19 +182,25 @@
 function showCharacterInfo(characterId) {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'none';
-    
+
     let intro = document.querySelector('.intro-text');
-    if (intro) intro.style.display = 'none';  // Ensure the intro text hides
-    
+    if (intro) {
+        intro.style.display = 'none'; 
+        intro.style.visibility = 'hidden'; // Extra safeguard
+    }
+
     document.getElementById(characterId).style.display = 'block';
 }
 
 function goBack() {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'block';
-    
+
     let intro = document.querySelector('.intro-text');
-    if (intro) intro.style.display = 'block';  // Ensure it reappears
+    if (intro) {
+        intro.style.display = 'block'; 
+        intro.style.visibility = 'visible'; // Makes sure it returns
+    }
 }
     </script>
 </head>
