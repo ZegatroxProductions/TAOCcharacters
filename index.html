@@ -136,6 +136,37 @@
                 font-size: 1.2em;
             }
         }
+    @media (max-width: 768px) {
+    .info-page {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .character-container {
+        padding: 10px;
+    }
+
+    .character {
+        width: 100%;
+        max-width: none;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .character-name {
+        font-size: 1.2em;
+    }
+
+    /* Fix for large images overflowing */
+    .info-page img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
     </style>
     <script>
         document.addEventListener('contextmenu', function(e) {
