@@ -70,22 +70,10 @@
             margin: 0.5em 0;
         }
 
-        .character-link {
+        .character-link, .back-button {
             text-decoration: none;
             color: limegreen;
             cursor: pointer;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .character-link:hover {
-            color: red;
-        }
-
-        .back-button {
-            color: limegreen;
-            text-decoration: none;
             padding: 0.5em 1em;
             border-radius: 5px;
             font-size: 1em;
@@ -93,22 +81,21 @@
             margin-bottom: 1em;
         }
 
-        .back-button:hover {
+        .character-link:hover, .back-button:hover {
             color: red;
         }
 
         .info-page {
-    padding: 2em;
-    margin: 2em auto;
-    max-width: 800px; 
-    width: 100%; 
-    min-width: 300px; 
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: none; 
-    box-sizing: border-box; 
-}
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+            box-sizing: border-box;
+        }
 
         .info-page h2 {
             font-size: 2em;
@@ -127,43 +114,48 @@
         }
 
         /* Mobile */
-@media (max-width: 768px) {
-    .info-page {
-        width: 90%; 
-        min-width: 0; 
-    }
+        @media (max-width: 768px) {
+            .info-page {
+                width: 90%;
+            }
 
-    .character-container {
-        padding: 10px;
-    }
+            .character-container {
+                padding: 10px;
+            }
 
-    .character {
-        width: 100%;
-        max-width: none;
-    }
+            .character {
+                width: 100%;
+                max-width: none;
+            }
 
-    header h1 {
-        font-size: 2em;
-    }
+            header h1 {
+                font-size: 2em;
+            }
 
-    .character-name {
-        font-size: 1.2em;
-    }
+            .character-name {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Disables right-click
+        });
 
-    .back-button {
-        padding: 0.5em 1em;
-    }
-}
-</style>
-        <script>
-            document.addEventListener('contextmenu', function(e) {
-                e.preventDefault(); // Disables right-click
-            });
-</script>
+        function showCharacterInfo(characterId) {
+            document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
+            document.querySelector('.main-page').style.display = 'none';
+            document.getElementById(characterId).style.display = 'block';
+        }
+
+        function goBack() {
+            document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
+            document.querySelector('.main-page').style.display = 'block';
+        }
+    </script>
 </head>
-
-
 <body>
+
     <header>
         <h1>The Adventures of Crizion Character Site</h1>
     </header>
