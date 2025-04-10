@@ -183,6 +183,18 @@
             document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
             document.querySelector('.main-page').style.display = 'block';
         }
+	function showCharacterInfo(characterId) {
+    document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
+    document.querySelector('.main-page').style.display = 'none';
+    document.querySelector('.intro-text').style.display = 'none'; // Hide intro text
+    document.getElementById(characterId).style.display = 'block';
+}
+
+function goBack() {
+    document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
+    document.querySelector('.main-page').style.display = 'block';
+    document.querySelector('.intro-text').style.display = 'block'; // Show intro text again
+}
     </script>
 </head>
 <body>
@@ -190,7 +202,9 @@
     <header>
         <h1>The Adventures of Crizion Character Site</h1>
     </header>
-	<h2><u> A website featuring all the characters from TAOC and more to come! </u></h2>
+	<div class="intro-text">
+    <h2><u>A website featuring all the characters from TAOC and more to come!</u></h2>
+</div>
 
     <!-- Main Page with Characters -->
     <div class="main-page">
