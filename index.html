@@ -128,12 +128,13 @@
         margin: 0 auto; /* Centers the image */
     }
 
-   .character-container {
+  .character-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 1fr; /* Ensures uniform row heights */
         gap: 20px;
+        align-items: start; /* Keeps items aligned correctly */
     }
-
 }
 
     </style>
