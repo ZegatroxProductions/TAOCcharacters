@@ -32,7 +32,7 @@
             display: block;
             width: 100%;
             padding: 2em;
-		<!-- it was here -->
+	    overflow-y: auto;
         }
 
         .character-container {
@@ -137,25 +137,26 @@
         });
 
     function showCharacterInfo(characterId) {
-        // Hide all info pages first
         document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-        // Hide the main page
         document.querySelector('.main-page').style.display = 'none';
-        // Hide intro text
+
         let intro = document.querySelector('.intro-text');
         if (intro) {
             intro.style.display = 'none';
             intro.style.visibility = 'hidden';
         }
-        // Show the selected character info page
+
         let characterInfo = document.querySelector(`#${characterId}`);
         characterInfo.style.display = 'block';
 
-        // Scroll to the top of the page
+        // Disable scrolling momentarily, then reset it
+        document.body.style.overflow = "hidden";
         setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 10);
+            document.body.style.overflow = "auto";
+        }, 50);
     }
+
 
     function goBack() {
         // Hide all info pages
