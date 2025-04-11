@@ -148,12 +148,11 @@
 
             document.querySelector(`#${characterId}`).style.display = 'block';
 
-	    	setTimeout(() => {
-            	document.documentElement.scrollTop = 0; // Works across most browsers
-            	document.body.scrollTop = 0; // For older browsers
-        	}, 100);
-
-
+	    setTimeout(() => {
+           	 window.scrollTo({ top: 0, behavior: 'smooth' });
+            	 document.documentElement.scrollTop = 0; // For cross-browser compatibility
+           	 document.body.scrollTop = 0;
+        	}, 50);
         }
 
         function goBack() {
