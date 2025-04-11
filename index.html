@@ -148,7 +148,11 @@
 
             document.querySelector(`#${characterId}`).style.display = 'block';
 
-	    characterInfo.scrollIntoView({ behavior: "smooth", block: "start" });
+	    	setTimeout(() => {
+            	document.documentElement.scrollTop = 0; // Works across most browsers
+            	document.body.scrollTop = 0; // For older browsers
+        	}, 100);
+
 
         }
 
