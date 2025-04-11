@@ -32,7 +32,7 @@
             display: block;
             width: 100%;
             padding: 2em;
-	    overflow-y: auto;
+	    overflow: visible;
         }
 
         .character-container {
@@ -149,12 +149,9 @@
         let characterInfo = document.querySelector(`#${characterId}`);
         characterInfo.style.display = 'block';
 
-        // Disable scrolling momentarily, then reset it
-        document.body.style.overflow = "hidden";
-        setTimeout(() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            document.body.style.overflow = "auto";
-        }, 50);
+        // Directly set the scroll position
+        document.documentElement.scrollTop = 0; 
+        document.body.scrollTop = 0; 
     }
 
 
