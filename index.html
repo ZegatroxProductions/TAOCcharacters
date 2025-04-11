@@ -148,7 +148,8 @@
 
             document.querySelector(`#${characterId}`).style.display = 'block';
 
-	    window.scrollTo(0, 0);
+	    characterInfo.scrollIntoView({ behavior: "smooth", block: "start" });
+
         }
 
         function goBack() {
