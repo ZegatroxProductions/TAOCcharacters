@@ -126,20 +126,7 @@
    	    width: 50%; 
     	    margin: 0 auto; 
         }
-	.character-link {
-        cursor: pointer;
-        padding: 10px 20px;
-        background-color: #558E3F;
-        color: white;
-        border-radius: 5px;
-        font-weight: bold;
-        text-decoration: none;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    	.character-link:hover {
-        	background-color: #AEEC1C; 
-        	transform: scale(1.05); 
-    	}
+
 	@media (max-width: 768px) {
     .info-page img {
         max-width: 95%;
@@ -230,12 +217,13 @@
 	 	<!-- Roles -->
             <div class="roles-section" style="text-align: center; margin: 1em 0;">
     <p>
-        <span class="character-link" onclick="showCharacterInfo('role-info')">
-            <strong><u>Learn about Roles</u></strong>
+        <span class="character-link" onclick="showCharacterInfo('role-info')" style="cursor: pointer; padding: 10px 20px; background-color: #558E3F; color: white; border-radius: 5px; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;">
+            Learn about Roles
         </span>
     </p>
     <hr style="border: 0; height: 1px; background-color: white; width: 60%; margin: 0.5em auto;">
 </div>
+
 
 	<div class="character-container">
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
