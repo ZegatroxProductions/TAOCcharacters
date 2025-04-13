@@ -1195,10 +1195,7 @@ Characters that are bad guys to the core and will stop at almost nothing to do b
 }
 
 function goBack() {
-    const scrollPercentage = window.scrollY / document.body.scrollHeight;
-
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-
     const mainPage = document.querySelector('.main-page');
     mainPage.style.display = 'block';
 
@@ -1209,7 +1206,7 @@ function goBack() {
     }
 
     requestAnimationFrame(() => {
-        const newScrollY = scrollPercentage * document.body.scrollHeight;
+        const newScrollY = lastScrollPercentage * document.body.scrollHeight;
         window.scrollTo({ top: newScrollY, behavior: 'smooth' });
     });
 }
