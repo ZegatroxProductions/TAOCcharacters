@@ -44,7 +44,7 @@
     		padding-top: 0 !important;
 	}
 	.roles-section {
-    		margin-bottom: 0;
+    		margin-bottom: 1em 0 0.5em 0;
     		padding-bottom: 0;
 	}
 
@@ -53,7 +53,7 @@
             width: 100%;
             max-width: 400px;
             background-color: rgba(0, 0, 0, 0.8);
-            margin: 1em 0;
+            margin: 0.5em 0;
             padding: 1em;
             text-align: center;
             border-radius: 10px;
@@ -136,13 +136,14 @@
   .character-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows: 1fr;
         gap: 5px;
+	padding: 0 1em;
         justify-items: center; 
     }
    .character {
         width: 100%;
-        max-width: none;
+        max-width: 300px;
+	margin: 0.5em auto;
     }
 }
 
