@@ -1191,6 +1191,7 @@ Characters that a bad guys to the core and will stop at almost nothing to do bad
         intro.style.visibility = 'hidden';
     }
     document.querySelector(`#${characterId}`).style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function goBack() {
