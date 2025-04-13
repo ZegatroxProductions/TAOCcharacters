@@ -36,7 +36,7 @@
         }
 
         .character-container {
-    		display: grid;
+    		display: flex;
     		flex-wrap: wrap;
     		justify-content: center;
     		gap: 20px;
@@ -44,16 +44,16 @@
 
 
         .character {
-		width: 100%;
-		max-width: 400px;
-		background-color: rgba(0, 0, 0, 0.8);
-		margin: 1em;
-		padding: 1em;
-		text-align: center;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-		transition: transform 0.3s ease-in-out;
-	}
+            width: 90%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 1em 0;
+            padding: 1em;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
 
         .character img {
             width: 100%;
@@ -131,10 +131,9 @@
   .character-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows: minmax(250px, auto);
-        gap: 10px;
+        grid-auto-rows: 1fr;
+        gap: 5px;
         align-items: start; 
-	justify-content: center;
     }
 }
 
@@ -199,7 +198,7 @@
 <h2>Artist of all of these characters:</h2>
 <h3><a href="https://www.tiktok.com/@scarrydragon">sccarydragon Tiktok</a></h3>
 <br>
-
+-----------------------------------------------------------------------------------------------------------------------------
 </div>
     <!-- Main Page with Characters -->
     <div class="main-page">
@@ -207,6 +206,8 @@
 	 	<!-- Roles -->
             <div class="information" style="text-align: center;">
                 <h1><span class="character-link" onclick="showCharacterInfo('role-info')"><u>Learn about Roles</u></span></h1>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            </div>
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
             <!-- Character 1 -->
             <div class="character">
@@ -1164,7 +1165,7 @@ Characters that a bad guys to the core and will stop at almost nothing to do bad
         function showCharacterInfo(characterId) {
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
     document.querySelector('.main-page').style.display = 'none';
-    
+
     let intro = document.querySelector('.intro-text');
     if (intro) {
         intro.style.display = 'none';
