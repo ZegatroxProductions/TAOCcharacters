@@ -1195,16 +1195,25 @@ Characters that are bad guys to the core and will stop at almost nothing to do b
 }
 
 function goBack() {
+    const scrollPercentage = window.scrollY / document.body.scrollHeight;
+
     document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-    document.querySelector('.main-page').style.display = 'block';
+
+    const mainPage = document.querySelector('.main-page');
+    mainPage.style.display = 'block';
 
     let intro = document.querySelector('.intro-text');
     if (intro) {
         intro.style.display = 'block';
         intro.style.visibility = 'visible';
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    requestAnimationFrame(() => {
+        const newScrollY = scrollPercentage * document.body.scrollHeight;
+        window.scrollTo({ top: newScrollY, behavior: 'smooth' });
+    });
 }
+
     </script>
 <div class="intro-text" style="text-align: center;">
 	<h2><i>This Website is Copyrighted by <p style="font-weight: 1000;">Zegatrox Productions 2015©</p>
