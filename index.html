@@ -32,22 +32,28 @@
             display: block;
             width: 100%;
             padding: 2em;
-	    overflow: visible;
+            overflow: visible;
         }
 
         .character-container {
-    		display: flex;
-    		flex-wrap: wrap;
-    		justify-content: center;
-    		gap: 20px;
-		margin-top: 0 !important;
-    		padding-top: 0 !important;
-	}
-	.roles-section {
-    		margin-bottom: 1em 0 0.5em 0;
-    		padding-bottom: 0;
-	}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
 
+        .story-section, .roles-section {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .story-section p, .roles-section p {
+            display: block;
+            margin: 10px 0;
+        }
 
         .character {
             width: 100%;
@@ -122,32 +128,31 @@
         .intro-text {
             display: block;
             visibility: visible;
-    	    text-align: center;
-   	    width: 50%; 
-    	    margin: 0 auto; 
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
         }
 
-	@media (max-width: 768px) {
-    .info-page img {
-        max-width: 95%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-  .character-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 5px;
-	padding: 0 1em;
-        justify-items: center; 
-    }
-   .character {
-        width: 100%;
-        max-width: 300px;
-	margin: 0.5em auto;
-    }
-}
-
+        @media (max-width: 768px) {
+            .info-page img {
+                max-width: 95%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            .character-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 5px;
+                padding: 0 1em;
+                justify-items: center;
+            }
+            .character {
+                width: 100%;
+                max-width: 300px;
+                margin: 0.5em auto;
+            }
+        }
     </style>
 
     <script>
@@ -200,28 +205,63 @@
         <h1>The Adventures of Crizion Character Site</h1>
     </header>
 <div class="intro-text" style="text-align: center;">
-	<h2><p style="color: green;">Ver 1.0.01 <u>BETA</u></p></h2>
-	<p style="color: limegreen;"><h2>Updates: April 10th</h2>
-	<h3>Welcome to <u>The Adventures of Crizion</u> Website! As of this BETA, you will be able to explore all the Original characters that I wish to be featured in future entertainment of any kind! All the details for every character except descriptions are here for you to explore. As of this update, only the first six characters have descriptions and more will come with each update along with future plans I have. Also, the ages shown here are not final and may be subject to change. Thats all I have to share, here’s my social’s if you are interested:</h3>
-<h3><a href="https://www.tiktok.com/@zegatroxproductions">Zegatrox Productions Tiktok</a></h3>
-<h3><a href="https://x.com/Zegatrox">Zegatrox Productions Twitter</a></h3>
-<h3><a href="https://venmo.com/u/ZegatroxStudios">Zegatrox Productions Venmo</a></h3>
+	<h2><p style="color: green;">Ver 1.0.02</p></h2>
+	<p style="color: limegreen;"><h2>Updates: April 16th</h2>
+	<h3>Welcome to <u>The Adventures of Crizion</u> Website! Where you will be able to explore all the original characters that I wish to be featured in future entertainment of any kind! For this update, I have added many UI elements to make multiple things more visually appealing and easier to understand. Along with this update there is a new button labeled "The Dark Skies War" where you can learn the tragic tale of what happened before the present-day story of TAOC. I also went in and fixed all spelling errors in the first six descriptions, more descriptions will come eventually! Finally, the ages shown here are still not final and may be subject to change. Thats all I have to share, enjoy the website!</h3>
+<h1>Socials:</h1>
+<h3>
+    <a href="https://www.tiktok.com/@zegatroxproductions">
+        <img src="https://i.imgur.com/q5FBuh0.png" alt="TikTok Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+        Zegatrox Productions Tiktok
+    </a>
+</h3>
+<h3>
+    <a href="https://x.com/Zegatrox">
+	<img src="https://i.imgur.com/w1Y5qXH.png" alt="TikTok Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+	Zegatrox Productions X (Twitter)
+    </a>
+</h3>
+<h2>If you feel like supporting me:</h2>
+<h3>
+    <a href="https://venmo.com/u/ZegatroxStudios">
+	<img src="https://i.imgur.com/f0ZUxl5.png" alt="TikTok Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+	Zegatrox Productions Venmo
+    </a>
+</h3>
 <h2>Artist of all of these characters:</h2>
-<h3><a href="https://www.tiktok.com/@scarrydragon">sccarydragon Tiktok</a></h3>
+<h3>
+    <a href="https://www.tiktok.com/@scarrydragon">
+	<img src="https://i.imgur.com/q5FBuh0.png" alt="TikTok Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+	sccarydragon Tiktok
+    </a>
+</h3>
 <br>
-<hr style="border: 2px solid green; width: 100%;">
+<hr style="border: 0; height: 1px; background-color: white; width: 100%; margin: 0.5em auto;">
 </div>
     <!-- Main Page with Characters -->
     <div class="main-page">
         <div class="character-container">
-	 	<!-- Roles -->
+	 	<!-- INFORMATION -->
+	<h1>Helpful Buttons:</h1>
+		<div class="story-section" style="text-align: center; margin: 1em 0;">
+    <p>
+        <span class="character-link" onclick="showCharacterInfo('story-info')" 
+              style="cursor: pointer; padding: 15px 25px; background-color: purple; 
+                     color: pink; border-radius: 5px; font-weight: bold; 
+                     text-decoration: none; transition: background-color 0.3s ease;">
+            The Dark Skies War
+        </span>
+    </p>
+
+</div>
+
             <div class="roles-section" style="text-align: center; margin: 1em 0;">
     <p>
-        <span class="character-link" onclick="showCharacterInfo('role-info')" style="cursor: pointer; padding: 10px 20px; background-color: #558E3F; color: white; border-radius: 5px; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;">
+        <span class="character-link" onclick="showCharacterInfo('role-info')" style="cursor: pointer; padding: 15px 25px; background-color: #558E3F; color: white; border-radius: 5px; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;">
             Learn about Roles
         </span>
     </p>
-    <hr style="border: 0; height: 1px; background-color: white; width: 60%; margin: 0.5em auto;">
+    <hr style="border: 0; height: 1px; background-color: white; width: 100%; margin: 0.5em auto;">
 </div>
 
 
@@ -231,295 +271,295 @@
             <div class="character">
 		<img src="https://i.imgur.com/6114mVZ.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Crizion</h2>
-                <span class="character-link" onclick="showCharacterInfo('character1-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character1-info')">Click here to View Details</span>
             </div>
             <!-- Character 2 -->
             <div class="character">
 		<img src="https://i.imgur.com/p27rtqw.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Crazytree</h2>
-                <span class="character-link" onclick="showCharacterInfo('character2-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character2-info')">Click here to View Details</span>
             </div>
             <!-- Character 3 -->
             <div class="character">
 		<img src="https://i.imgur.com/KZxuJBd.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Bulletblade</h2>
-                <span class="character-link" onclick="showCharacterInfo('character3-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character3-info')">Click here to View Details</span>
             </div>
             <!-- Character 4 -->
             <div class="character">
   		<img src="https://i.imgur.com/TMUr6pK.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Izzy</h2>
-                <span class="character-link" onclick="showCharacterInfo('character4-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character4-info')">Click here to View Details</span>
             </div>
             <!-- Character 5 -->
             <div class="character">
 		<img src="https://i.imgur.com/fbm67rC.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Tkaragem</h2>
-                <span class="character-link" onclick="showCharacterInfo('character5-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character5-info')">Click here to View Details</span>
             </div>
             <!-- Character 6 -->
             <div class="character">
 		<img src="https://i.imgur.com/HUn3TUo.jpeg" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Anya</h2>
-                <span class="character-link" onclick="showCharacterInfo('character6-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character6-info')">Click here to View Details</span>
             </div>
             <!-- Character 7 -->
             <div class="character">
 		<img src="https://i.imgur.com/mFFGg84.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Axol</h2>
-                <span class="character-link" onclick="showCharacterInfo('character7-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character7-info')">Click here to View Details</span>
             </div>
             <!-- Character 8 -->
             <div class="character">
 		<img src="https://i.imgur.com/1fMVfc7.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Pelestia</h2>
-                <span class="character-link" onclick="showCharacterInfo('character8-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character8-info')">Click here to View Details</span>
             </div>
             <!-- Character 9 -->
             <div class="character">
 		<img src="https://i.imgur.com/wvIga9k.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Vester</h2>
-                <span class="character-link" onclick="showCharacterInfo('character9-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character9-info')">Click here to View Details</span>
             </div>
             <!-- Character 10 -->
             <div class="character">
 		<img src="https://i.imgur.com/oMi1Ggf.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Iris</h2>
-                <span class="character-link" onclick="showCharacterInfo('character10-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character10-info')">Click here to View Details</span>
             </div>
             <!-- Character 11 -->
             <div class="character">
 		<img src="https://i.imgur.com/pTVHt3u.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Abigail</h2>
-                <span class="character-link" onclick="showCharacterInfo('character11-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character11-info')">Click here to View Details</span>
             </div>
             <!-- Character 12 -->
             <div class="character">
 		<img src="https://i.imgur.com/b4WJcLE.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Linden</h2>
-                <span class="character-link" onclick="showCharacterInfo('character12-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character12-info')">Click here to View Details</span>
             </div>
             <!-- Character 13 -->
             <div class="character">
 		<img src="https://i.imgur.com/8SwOhbE.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Dave</h2>
-                <span class="character-link" onclick="showCharacterInfo('character13-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character13-info')">Click here to View Details</span>
             </div>
             <!-- Character 14 -->
             <div class="character">
 		<img src="https://i.imgur.com/enCWeLZ.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Pyrana</h2>
-                <span class="character-link" onclick="showCharacterInfo('character14-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character14-info')">Click here to View Details</span>
             </div>
             <!-- Character 15 -->
             <div class="character">
 		<img src="https://i.imgur.com/Ukq6LwW.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Arrowite</h2>
-                <span class="character-link" onclick="showCharacterInfo('character15-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character15-info')">Click here to View Details</span>
             </div>
             <!-- Character 16 -->
             <div class="character">
 		<img src="https://i.imgur.com/h3X2btM.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Larah</h2>
-                <span class="character-link" onclick="showCharacterInfo('character16-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character16-info')">Click here to View Details</span>
             </div>
             <!-- Character 17 -->
             <div class="character">
 		<img src="https://i.imgur.com/CHNN3hu.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Igor</h2>
-                <span class="character-link" onclick="showCharacterInfo('character17-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character17-info')">Click here to View Details</span>
             </div>
             <!-- Character 18 -->
             <div class="character">
 		<img src="https://i.imgur.com/QAViInf.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Jyaine</h2>
-                <span class="character-link" onclick="showCharacterInfo('character18-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character18-info')">Click here to View Details</span>
             </div>
             <!-- Character 19 -->
             <div class="character">
 		<img src="https://i.imgur.com/zOu6W2A.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Garvoch</h2>
-                <span class="character-link" onclick="showCharacterInfo('character19-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character19-info')">Click here to View Details</span>
             </div>
             <!-- Character 20 -->
             <div class="character">
 		<img src="https://i.imgur.com/NGnAvPG.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Wuji</h2>
-                <span class="character-link" onclick="showCharacterInfo('character20-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character20-info')">Click here to View Details</span>
             </div>
             <!-- Character 21 -->
             <div class="character">
 		<img src="https://i.imgur.com/LaqqCUY.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Carpacho</h2>
-                <span class="character-link" onclick="showCharacterInfo('character21-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character21-info')">Click here to View Details</span>
             </div>
             <!-- Character 22 -->
             <div class="character">
 		<img src="https://i.imgur.com/8avwaBj.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Yavel</h2>
-                <span class="character-link" onclick="showCharacterInfo('character22-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character22-info')">Click here to View Details</span>
             </div>
             <!-- Character 23 -->
             <div class="character">
 		<img src="https://i.imgur.com/GeLSkXT.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Benton</h2>
-                <span class="character-link" onclick="showCharacterInfo('character23-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character23-info')">Click here to View Details</span>
             </div>
             <!-- Character 24 -->
             <div class="character">
 		<img src="https://i.imgur.com/xN8DEqT.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Estrailia</h2>
-                <span class="character-link" onclick="showCharacterInfo('character24-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character24-info')">Click here to View Details</span>
             </div>
             <!-- Character 25 -->
             <div class="character">
 		<img src="https://i.imgur.com/7qo9tiS.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Necros</h2>
-                <span class="character-link" onclick="showCharacterInfo('character25-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character25-info')">Click here to View Details</span>
             </div>
             <!-- Character 26 -->
             <div class="character">
 		<img src="https://i.imgur.com/KyGbpn4.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Heveres</h2>
-                <span class="character-link" onclick="showCharacterInfo('character26-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character26-info')">Click here to View Details</span>
             </div>
             <!-- Character 27 -->
             <div class="character">
 		<img src="https://i.imgur.com/Jm05ezz.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Lisa</h2>
-                <span class="character-link" onclick="showCharacterInfo('character27-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character27-info')">Click here to View Details</span>
             </div>
             <!-- Character 28 -->
             <div class="character">
 		<img src="https://i.imgur.com/e6WzD7x.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Decratos</h2>
-                <span class="character-link" onclick="showCharacterInfo('character28-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character28-info')">Click here to View Details</span>
             </div>
             <!-- Character 29 -->
             <div class="character">
 		<img src="https://i.imgur.com/88HsHTh.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Ugarness</h2>
-                <span class="character-link" onclick="showCharacterInfo('character29-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character29-info')">Click here to View Details</span>
             </div>
             <!-- Character 30 -->
             <div class="character">
 		<img src="https://i.imgur.com/BFN7uPf.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Girade</h2>
-                <span class="character-link" onclick="showCharacterInfo('character30-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character30-info')">Click here to View Details</span>
             </div>
             <!-- Character 31 -->
             <div class="character">
 		<img src="https://i.imgur.com/3KtNXQd.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Farago</h2>
-                <span class="character-link" onclick="showCharacterInfo('character31-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character31-info')">Click here to View Details</span>
             </div>
             <!-- Character 32 -->
             <div class="character">
 		<img src="https://i.imgur.com/MjhzwTx.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Barricrude</h2>
-                <span class="character-link" onclick="showCharacterInfo('character32-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character32-info')">Click here to View Details</span>
             </div>
             <!-- Character 33 -->
             <div class="character">
 		<img src="https://i.imgur.com/eKD6PJC.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Takatoka</h2>
-                <span class="character-link" onclick="showCharacterInfo('character33-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character33-info')">Click here to View Details</span>
             </div>
             <!-- Character 34 -->
             <div class="character">
 		<img src="https://i.imgur.com/Z7y39Ke.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Gemeina</h2>
-                <span class="character-link" onclick="showCharacterInfo('character34-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character34-info')">Click here to View Details</span>
             </div>
             <!-- Character 35 -->
             <div class="character">
 		<img src="https://i.imgur.com/YrnNC5P.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Tupa</h2>
-                <span class="character-link" onclick="showCharacterInfo('character35-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character35-info')">Click here to View Details</span>
             </div>
             <!-- Character 36 -->
             <div class="character">
 		<img src="https://i.imgur.com/EGGKu6w.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Viviana</h2>
-                <span class="character-link" onclick="showCharacterInfo('character36-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character36-info')">Click here to View Details</span>
             </div>
             <!-- Character 37 -->
             <div class="character">
 		<img src="https://i.imgur.com/jxuFZY4.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Torean</h2>
-                <span class="character-link" onclick="showCharacterInfo('character37-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character37-info')">Click here to View Details</span>
             </div>
             <!-- Character 38 -->
             <div class="character">
 		<img src="https://i.imgur.com/HALaUnV.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Tunundra</h2>
-                <span class="character-link" onclick="showCharacterInfo('character38-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character38-info')">Click here to View Details</span>
             </div>
             <!-- Character 39 -->
             <div class="character">
 		<img src="https://i.imgur.com/Omt9AZa.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Ludicrous</h2>
-                <span class="character-link" onclick="showCharacterInfo('character39-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character39-info')">Click here to View Details</span>
             </div>
             <!-- Character 40 -->
             <div class="character">
 		<img src="https://i.imgur.com/eTyJErw.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Blendice</h2>
-                <span class="character-link" onclick="showCharacterInfo('character40-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character40-info')">Click here to View Details</span>
             </div>
             <!-- Character 41 -->
             <div class="character">
 		<img src="https://i.imgur.com/6plOhFS.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Razorox</h2>
-                <span class="character-link" onclick="showCharacterInfo('character41-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character41-info')">Click here to View Details</span>
             </div>
             <!-- Character 42 -->
             <div class="character">
 		<img src="https://i.imgur.com/6hAC59F.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Charolette</h2>
-                <span class="character-link" onclick="showCharacterInfo('character42-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character42-info')">Click here to View Details</span>
             </div>
             <!-- Character 43 -->
             <div class="character">
 		<img src="https://i.imgur.com/FCV0hPv.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Sourczess</h2>
-                <span class="character-link" onclick="showCharacterInfo('character43-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character43-info')">Click here to View Details</span>
             </div>
             <!-- Character 44 -->
             <div class="character">
 		<img src="https://i.imgur.com/V3YvrBb.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Blaze</h2>
-                <span class="character-link" onclick="showCharacterInfo('character44-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character44-info')">Click here to View Details</span>
             </div>
             <!-- Character 45 -->
             <div class="character">
 		<img src="https://i.imgur.com/wZHS1Hy.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Cocy</h2>
-                <span class="character-link" onclick="showCharacterInfo('character45-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character45-info')">Click here to View Details</span>
             </div>
             <!-- Character 46 -->
             <div class="character">
   		<img src="https://i.imgur.com/aDMS9iw.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Spricados</h2>
-                <span class="character-link" onclick="showCharacterInfo('character46-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character46-info')">Click here to View Details</span>
             </div>
             <!-- Character 47 -->
             <div class="character">
 		<img src="https://i.imgur.com/KO31It4.png" width="300" height="200" alt="Your Image">
                 <h2 class="character-name">Epister</h2>
-                <span class="character-link" onclick="showCharacterInfo('character47-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character47-info')">Click here to View Details</span>
             </div>
             <!-- Character 48 -->
             <div class="character">
                 <img src="placeholder.jpg" alt="Coming Soon!">
                 <h2 class="character-name">Metal Master</h2>
-                <span class="character-link" onclick="showCharacterInfo('character48-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character48-info')">Click here to View Details</span>
             </div>
             <!-- Character 49 -->
             <div class="character">
                 <img src="Zegatrox.jpg" alt="Coming Soon!">
                 <h2 class="character-name">Zegatrox</h2>
-                <span class="character-link" onclick="showCharacterInfo('character49-info')">View Details</span>
+                <span class="character-link" onclick="showCharacterInfo('character49-info')">Click here to View Details</span>
             </div>
         </div>
     </div>
@@ -543,6 +583,43 @@ Characters that are bad guys, but still have a heart or a soft spot for things/p
 	<p style="color: red;">Villain</p>
 Characters that are bad guys to the core and will stop at almost nothing to do bad things.
 	</div>
+<div class="info-page" id="story-info">
+    <a class="back-button" onclick="goBack()">← Back</a>
+    <h1>The Dark Skies War</h1>
+    <p>The Dark Skies War is a war that changed the way of life for all species around the Fraier continent. The war occurs about 18 years before the present plot. Our story for this war begins after some species undergo their own mini-industrial revolutions. The Reptilians discover waterpower as a form of energy. The Shadefolk were able to construct weak but functional firearms and branched off weaponry of the category.  The Frosts were able to make hundreds of quality-of-life changes to their lifestyle. Others at the time were not doing much, The Zuku, Crystals, and Centipedras all focused on survival in their own ways. During this time was also the peak of the trading industry that all major kingdoms participated in, it was truly the pinnacle of the time. While this was going on, The Shadefolk sent a request to each kingdom proposing a continent-wide peace. Since nothing has really been officially established and no conflicts seemed amiss, all kingdoms accepted. This also gave species the chance to meet with ones that are placed polar opposites from each other, gaining an even friendlier alliance from there it was only a  matter of time before the species would gather. The meeting place was the center of the continent, where a massive stone cylindrical podium was built by earthlings after receiving message of the truce. Everyone eventually meet around the middle. It gave species a chance to talk to each other. 
+</br>
+<img src="https://i.imgur.com/ljiKFuR.png" width="725" height="455" alt="Your Image">
+</br>
+The Reptilians were open arms to anyone, they were as happy and jolly as they could be, offering unique foods, explaining their culture, and having a nice laugh with everyone. The Zuku were also very generous, thousands of gifts were made prior to the day of meeting to give out to any of the other species. There couldn’t have been anyone more peaceful there than the Zuku’s. The Shadefolk on the other hand were very secretive. Almost every warrior was ordered not to go into contact with other species for unknown reasons, so they just made their camp and pursued as introverts. The Centipedras were also very strict about their isolation policies. Given most their species were very pretty females, they have to keep a constant eye out of anything kind of bad behavior from others, but they were not in complete solitude as the queen let them roam in groups. The Crystals were all over the place, their leader let them roam free and told them to be themselves without causing harm or uncomfortable behavior. Some groups were silly and unattached, while others tried to find other species who had the same hobbies as they do. The Frosts were undergoing training regimens while also subbing out groups to go meet with all the species. If there was anybody that was the most organized and respectful about other species, it was them. The meeting event lasted only about 8 hours before the truce was going to commence. 
+</br>
+<img src="https://i.imgur.com/qqrir06.png" width="725" height="455" alt="Your Image">
+</br>
+Now, a lot of commotion was active throughout all the species but nothing to a major point. Now we finally reach the truce, where all species reported back to their camps, and all leaders would step forward. Six sets of stairs were built around the podium in the center, each leader walked up a set of stairs. Different things were going through each of their heads as a huge moment was upon them all. The leaders all reached the top, where the deed sat in the center of the podium, waiting to be signed. One at a time, a leader would give their speech, their nation would rally, and they would sign it, but a slight pause when it came to the Shadefolk leader. Now with the Shadefolk leader about ready to sign, disaster struck at that very moment.
+</br>
+<img src="https://i.imgur.com/wJPhV4d.png" width="725" height="455" alt="Your Image">
+</br>
+Purple clouds formed out of the sky, causing uncanny emotions throughout the continent. At first it left everyone confused, purple clouds were never seen before, and it did not look good. The cloud started channeling electricity through it and then it happened. A huge pink lighting bolt struck the front part of the Shadefolk kingdom as hard as it could. The King: Yaozen was in shambles. Quickly after the strike on the Shadefolk Kingdom, an individual strike of the same capacity struck all of other kingdoms in a circle starting with Reptilians and making its way around, as one was about to hit the Crystals Kingdom though, the heart of the kingdom deflected it and instead, it hit the Zuku’s extra hard, leaving it completely in shambles.
+</br>
+<img src="https://i.imgur.com/aEHnNYH.png" width="725" height="455" alt="Your Image">
+</br>
+But Yaozen still stood there with his claymore loose in his hand, eyes wide, he never thought he would see his kingdom crumble so fast. The fears he had developed through his entire life as King have become a reality, and he couldn’t control his emotions anymore. The one thing he sought to protect and improve was blasted away in an instant, it was something he could not stand for. It would then be at this moment that a war was declared, The Dark Skies War.
+</br>
+<img src="https://i.imgur.com/e6kK3Lr.png" width="725" height="455" alt="Your Image">
+</br>
+Yaozen would immediately place the blame on the Crystals. It was the only logical reason for him since their kingdom seemed immune to the effects of the lightning. So, with that intense thought of anger, he shouted “ALL TROOPS, SEIZE THE DAMNED WHO CAUSED THIS MADNESS, THE CRYSTALS LIVES END HERE!” moments after it was shouted, all hell broke loose. After Shadefolk warriors pushed and shoved through the Centipedras they immediately charged at the Crystals with matched anger of the king. The other species were left speechless but wouldn’t stand by and let this happen. Yaozen was a masterful tactician though, as he had more men ready to fight then every species combined. If anyone was ready for a war it was him. Shadefolk warriors in different quadrants were sent to seize each kingdom and prevent them from interfering with the siege on the Crystals. Yaozen knew others wouldn’t let him pursue his goals, so with the understanding that there is no going back, he took two steps forward instead.
+</br>
+<img src="https://i.imgur.com/lMqntaA.png" width="725" height="455" alt="Your Image">
+</br>
+The wars duration was immense, it started at the center of the continent and eventually traced back to each species home kingdoms, where Shadefolk were just flooding from everywhere with new advanced weapons beyond any other species comprehension. It was a war of madness and uncertainty. Results soon came in though, as after a single year, the Reptilians put an end to the Shadefolk’s siege on them and emerged somewhat victorious. After 2 years, The Frosts and Centipedras on the other hand faced different ends as they ended up under an agreement of surrender that favored the Shadefolk immensely. The ends of the Zuku’s were quickly met in under a week, no Zuku seemed to make it out alive. Finally for the Crystals, the surprise attack severely hurt their number of them, so there only instinct was to head for the ocean, where they can breathe under water, and no one else can. They retreated successfully with a little more than half their species alive. This endeavor is not one to forget for ages to come.
+</br>
+<img src="https://i.imgur.com/HGunyhj.png" width="725" height="455" alt="Your Image">
+</br>
+Time passed after the seeming end of the war, each species had a chance to regrow, but this time, they did it in solitude. Everyone was so traumatized from the aftermaths that they just didn’t want to deal with anyone with the chaos. So, trade was quickly cut off, but evolution of the species didn’t stop. There was no sign of leaving the kingdom, even some policies of some of the kingdoms called it treason if you step outside of kingdom borders. It was an unfortunate event that got cast upon everyone, what was worse is that there was something new brewing. Because about 3 years after the wars end, unforeseen Monsters started appearing randomly, no one could make out what kind of species they were. Naturally the monsters were fended off in each remaining kingdom, except for the Centipedra kingdom, where every one of the Centipedras was forced underground because of the pure mass and strength of the monsters there was unlike any other for some reason. No one dared to question it assuming it was just nature, but something far worse was going to happen. As for the Crystals, 10 years after the wars end they fought their way back to their land and started their life again, completely renovating their home one step at a time and staying positive during the process. But as the years passed since the end of the dark war, Yaozen has been planning his next strike very carefully, from designing new weapons to delving into potion study’s and war machines, because this time, he wasn’t going to let any of the species live peacefully.
+</br>
+<img src="https://i.imgur.com/jquw9tf.png" width="725" height="455" alt="Your Image">
+</br>
+</p>
+</div>
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
     <div class="info-page" id="character1-info">
