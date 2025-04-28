@@ -205,9 +205,9 @@
         <h1>The Adventures of Crizion Character Site</h1>
     </header>
 <div class="intro-text" style="text-align: center;">
-	<h2><p style="color: green;">Ver 1.0.02</p></h2>
-	<p style="color: limegreen;"><h2>Updates: April 16th</h2>
-	<h3>Welcome to <u>The Adventures of Crizion</u> Website! Where you will be able to explore all the original characters that I wish to be featured in future entertainment of any kind! For this update, I have added many UI elements to make multiple things more visually appealing and easier to understand. Along with this update there is a new button labeled "The Dark Skies War" where you can learn the tragic tale of what happened before the present-day story of TAOC. I also went in and fixed all spelling errors in the first six descriptions, more descriptions will come eventually! Finally, the ages shown here are still not final and may be subject to change. Thats all I have to share, enjoy the website!</h3>
+	<h2><p style="color: green;">Ver 1.0.03</p></h2>
+	<p style="color: limegreen;"><h2>Updates: April 28th</h2>
+	<h3>Welcome to <u>The Adventures of Crizion</u> Website! Where you will be able to explore all the original characters that I wish to be featured in future entertainment of any kind! For this update, There are two new buttons: The "Fanart Gallery" where you can check out other peoples art relating to TAOC. Then "Learn about Species" where you can get a better idea of what my weird species are like! There is still also the "The Dark Skies War" button where you can learn of the tragic tale of what happened before the present-day story of TAOC. Also, Axol and Pelestia now have there descriptions! More descriptions will come eventually! Finally, the ages shown here are still not final and may be subject to change. Thats all I have to share, enjoy the website!</h3>
 <h1>Socials:</h1>
 <h3>
     <a href="https://www.tiktok.com/@zegatroxproductions">
@@ -244,20 +244,34 @@
 	 	<!-- INFORMATION -->
 	<h1>Helpful Buttons:</h1>
 		<div class="story-section" style="text-align: center; margin: 1em 0;">
+	<p>
+        <span class="character-link" onclick="showCharacterInfo('fanart-info')" 
+              style="cursor: pointer; padding: 15px 25px; background-color: darkblue; 
+                     color: lightblue; border-radius: 5px; font-weight: bold; 
+                     text-decoration: none; transition: background-color 0.3s ease;">
+            Fanart Gallery
+        </span>
+    </p>
     <p>
         <span class="character-link" onclick="showCharacterInfo('story-info')" 
-              style="cursor: pointer; padding: 15px 25px; background-color: purple; 
+              style="cursor: pointer; padding: 10px 20px; background-color: purple; 
                      color: pink; border-radius: 5px; font-weight: bold; 
                      text-decoration: none; transition: background-color 0.3s ease;">
             The Dark Skies War
         </span>
     </p>
 
-</div>
-
-            <div class="roles-section" style="text-align: center; margin: 1em 0;">
     <p>
-        <span class="character-link" onclick="showCharacterInfo('role-info')" style="cursor: pointer; padding: 15px 25px; background-color: #558E3F; color: white; border-radius: 5px; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;">
+        <span class="character-link" onclick="showCharacterInfo('species-info')" 
+              style="cursor: pointer; padding: 10px 20px; background-color: darkorange; 
+                     color: yellow; border-radius: 5px; font-weight: bold; 
+                     text-decoration: none; transition: background-color 0.3s ease;">
+            Learn About Species
+        </span>
+    </p>
+     
+    <p>
+        <span class="character-link" onclick="showCharacterInfo('role-info')" style="cursor: pointer; padding: 10px 20px; background-color: darkgreen; color: lightgreen; border-radius: 5px; font-weight: bold; text-decoration: none; transition: background-color 0.3s ease;">
             Learn about Roles
         </span>
     </p>
@@ -551,13 +565,13 @@
             </div>
             <!-- Character 48 -->
             <div class="character">
-                <img src="placeholder.jpg" alt="Coming Soon!">
+                <img src="https://i.imgur.com/G1xMLk5.png" width="300" height="200" alt="Coming Soon!">
                 <h2 class="character-name">Metal Master</h2>
                 <span class="character-link" onclick="showCharacterInfo('character48-info')">Click here to View Details</span>
             </div>
             <!-- Character 49 -->
             <div class="character">
-                <img src="Zegatrox.jpg" alt="Coming Soon!">
+                <img src="https://i.imgur.com/hYUXGXn.png" width="300" height="200" alt="Coming Soon!">
                 <h2 class="character-name">Zegatrox</h2>
                 <span class="character-link" onclick="showCharacterInfo('character49-info')">Click here to View Details</span>
             </div>
@@ -618,6 +632,49 @@ Time passed after the seeming end of the war, each species had a chance to regro
 </br>
 <img src="https://i.imgur.com/jquw9tf.png" width="725" height="455" alt="Your Image">
 </br>
+</p>
+</div>
+<div class="info-page" id="fanart-info">
+    <a class="back-button" onclick="goBack()">← Back</a>
+    <h1>Fanart Gallery</h1>
+    <p>Here you can find Talented Artists work related to The Adventures of Crizion, if you want to see your's here someday, just tag me in a post or messsage me at one of my social media accounts! Spots may become limited eventully!
+<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
+<img src="https://i.imgur.com/qbcVp9g.jpeg" width="725" height="875" alt="Your Image">
+Garvoch Fullbody. By: scarrydragon on Tiktok
+<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
+<img src="https://i.imgur.com/Pgk2Fjy.png" width="725" height="975" alt="Your Image">
+Anya's Royal Warrior Outfit. By: scarrydragon on Tiktok
+<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
+
+
+
+
+
+</p>
+</div>
+
+<div class="info-page" id="species-info">
+    <a class="back-button" onclick="goBack()">← Back</a>
+    <h1>Species</h1>
+    <p> Species are the types of weird creatures found in The Adventures Of Crizion, this is to help people get a better understanding of the species and their habits.
+</br>
+<p style="color: green;">Reptilian's</p> These are anthropomorphic alligators/crocodiles. The species has not always been the brightest. They tend to use brute force for everything. All in all, they just want to have a good time usually.
+</br>
+<p style="color: brown;">Zuku's</p> These are people who are trees, skin as bark and such. The species is known for being the Oldest to inhabit the land, known more as a peaceful tribe that just wants to live life on their land.
+</br>
+<p style="color: purple;">Shadefolk's</p> These are one of the closest species to humans, except their skin is completely pitch black and more sensitive to damage. Like I said, they are the closest to humans, so they have a progressively high evolution rate, being the most advanced of all the species.
+</br>
+<p style="color: orange;">Centipedra's</p> These are also another close match to humans, except with bug like features and ripe orange skin. The population consists mostly of females opposed to males because of simple nature, they are mostly smart while at the same time harsh with their way of life.
+</br>
+<p style="color: pink;">Crystal's</p> These are creatures that are made of crystals with a resembling structure of multiple kinds of sea life. These are a freelance species with not many laws and has the most freedom out of any species, everyone gets to express their own interests and desires freely as long as it does not do harm.
+</br>
+<p style="color: lightblue;">Frost's</p> This is the final close match to humans; they just have blue skin and consider cold temperatures to feel good while extremely hot ones hurt them. Their species also had a regular human-like evolution, they like to build marvelous structures and expand their culture far and wide.
+</br>
+Other species are coming soon!
+
+
+
+
 </p>
 </div>
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
@@ -710,7 +767,7 @@ Time passed after the seeming end of the war, each species had a chance to regro
 	<p><strong>Role:</strong> Hero</p>
         <p><strong>Birthday:</strong> March 8th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Axol is cautious and easily frightened Dragon who loves to make all kinds of melee weaponry. While he cowers in the face of battle, he is highly skilled in making unique and never breaking weapons. Axol was born in the Revendead continent, specifically the Death Valley, which is where he gets his dark red color from. In a place like Death Valley, murder, weapons and fights were everything. Axol was raised to inherit his father’s fighting legacy, but he didn’t want that, Axol was scared of fights, therefore, he ended up getting kicked out of his household at age 15. He then discovered his love for designing weapons. Swords specifically was what he loved to do, any shape or size, Axol was able to do it. Axol then started a business for weapon making and became a great hit, everyone in his local neighborhood would buy weapons from him. The business was going well, until it attracted his fathers attention along with their current monarch. The monarch did not support the freestyle selling of weapons, furious, he challenged Axol to a fight. Just as the monarch was about to blow Axol’s head off, his father stepped in and vowed to fight for him. Axol was confused, but he couldn’t think straight, in the presence of the monarch Axol was coveted in fear. With only a signaling nod from Axol’s father, Axol fled Death Valley, and didn’t look back. After flying for what seemed to be forever, he stumbled upon the Fraier Continent. He then continued to start up and run his business for the next few years. While he is proud of what he has accomplished, Axol’s new dream is to find a way to travel back to Revendead a new and brave dragon to make his father proud.</p>
     </div>
 
     <div class="info-page" id="character8-info">
@@ -723,7 +780,7 @@ Time passed after the seeming end of the war, each species had a chance to regro
 	<p><strong>Role:</strong> Hero</p>
         <p><strong>Birthday:</strong> April 1st</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Pelestia is a kind and heart-warming Guardian who looks over the lands of Fraier as the seemingly last of her species. She is always looking for someone to tend to, she strives to heal people who do good for the world and to make a difference. Pelestia was born amongst the sky’s in the clouds as a part of an ancient species: The Guardians. They had marvelous civilizations that would cycle the outer parts of the Fraier Continent, and no other species knew of their existance. Pelestia was born amongst them. All of her life, she was raised to be a magnificent wound healer, being taught among the best, where there was no room for mistakes. She spent most of her life indoors, unable to use her perfectly good wings to explore the world. While sadden, she embraced her teachings and didn’t question any higher ups. But it wasn’t all bad for her, she made many friends through the path of healing, she didn’t mind not being able to leave at all. But then, The Dark Skies War occurred. With the clouds plagued purple and crackling electricity flowing through them all, it caused a huge electric chain reaction to the entirety of the kingdom. This caused every guardian there to get electrocuted, causing their bodies to evaporate from the span and range of the purple clouds power. After the month that the clouds were purple, they slowly turned grey with time, and the electricity was at a normal pace again at least. Pelestia was the only survivor, she didn’t know how, but she knew that she got blinded from the experience, she would never see again. Because she didn’t know what happened, she thought that everyone had fled from the lightning-fast attack. So, she started to feel her way around the kingdom again to look for any signs of life, but none were there. Her dream is to simply wait for them to come back so she could be together with them again…A dream that will never come true.</p>
     </div>
 
     	<div class="info-page" id="character9-info">
@@ -1236,7 +1293,7 @@ Time passed after the seeming end of the war, each species had a chance to regro
 	<div class="info-page" id="character48-info">
         <a class="back-button" onclick="goBack()">← Back</a>
         <h2>Metal Master</h2>
-	<img src="" width="725" height="455" alt="Coming Soon!">
+	<img src="https://i.imgur.com/G1xMLk5.png" width="725" height="455" alt="Coming Soon!">
 	<p><strong>Species:</strong> ???</p>
         <p><strong>Gender:</strong> None</p>
         <p><strong>Age:</strong> 12</p>
@@ -1249,7 +1306,7 @@ Time passed after the seeming end of the war, each species had a chance to regro
 	<div class="info-page" id="character49-info">
         <a class="back-button" onclick="goBack()">← Back</a>
         <h2>Zegatrox</h2>
-	<img src="" width="725" height="455" alt="Coming Soon!">
+	<img src="https://i.imgur.com/hYUXGXn.png" width="725" height="455" alt="Coming Soon!">
 	<p><strong>Species:</strong> DrawnBorn</p>
         <p><strong>Gender:</strong> None</p>
         <p><strong>Age:</strong> I want to be in my 20's.</p>
