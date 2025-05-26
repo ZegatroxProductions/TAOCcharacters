@@ -180,6 +180,13 @@
                 max-width: 300px;
                 margin: 0.5em auto;
             }
+	    .intro-text { 
+        	font-size: 14px; 
+        	line-height: 1.4; 
+        	text-align: center; 
+        	padding: 10px; 
+        	word-wrap: break-word; 
+    	    }
         }
     </style>
 
@@ -1386,7 +1393,6 @@ Other species are coming soon!
             console.error("Missing elements in HTML structure.");
         }
 
-        // Disable/Enable buttons based on position
         prevButton.disabled = (currentIndex === 0);
         nextButton.disabled = (currentIndex === images.length - 1);
     }
