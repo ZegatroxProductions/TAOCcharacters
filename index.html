@@ -172,9 +172,10 @@
         @media (max-width: 768px) {
 
  body {
-        background-size: 100% 100%; 
-        background-position: center center; 
+        background-size: contain; /* Prevents cropping */
+        background-position: top center; /* Aligns better for mobile */
         background-repeat: no-repeat;
+
 }
     }
 
