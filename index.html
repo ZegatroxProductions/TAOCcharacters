@@ -12,10 +12,10 @@
     	margin: 0;
     	font-family: 'Trebuchet MS', sans-serif;
     	background-image: url('https://i.imgur.com/gVe3QrN.gif'); 
-    	background-size: cover; 
-    	background-repeat: no-repeat; 
-    	background-position: center;
-    	background-attachment: fixed;
+    	background-size: cover; /* Ensure it covers the screen */
+    	background-position: center center; /* Keeps it centered */
+    	background-repeat: no-repeat; /* Prevent tiling */
+    	background-attachment: fixed; /* Keeps it stable */
     	color: white;
     	display: flex;
     	flex-direction: column;
@@ -172,9 +172,8 @@
         @media (max-width: 768px) {
 
  body {
-        background-image: url('https://i.imgur.com/YOUR-GIF.gif');
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: top center; 
         background-repeat: no-repeat;
     }
 
