@@ -133,6 +133,34 @@
             margin: 0 auto;
         }
 
+.fanart-page {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.fanart-page img {
+    width: 300px; /* Adjust width */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.top-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-buttons {
+    text-align: center;
+}
+
+.nav-buttons button {
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
         @media (max-width: 768px) {
             .info-page img {
                 max-width: 95%;
@@ -215,9 +243,9 @@ function decodeHTML() {
     </header>
 <div id="content"></div>
 <div class="intro-text" style="text-align: center;">
-	<h2><p style="color: green;">Ver 1.0.03</p></h2>
-	<p style="color: limegreen;"><h2>Updates: April 28th</h2>
-	<h3>Welcome to <u>The Adventures of Crizion</u> Website! Where you will be able to explore all the original characters that I wish to be featured in future entertainment of any kind! For this update, There are two new buttons: The "Fanart Gallery" where you can check out other peoples art relating to TAOC. Then "Learn about Species" where you can get a better idea of what my weird species are like! There is still also the "The Dark Skies War" button where you can learn of the tragic tale of what happened before the present-day story of TAOC. Also, Axol and Pelestia now have there descriptions! More descriptions will come eventually! Finally, the ages shown here are still not final and may be subject to change. Thats all I have to share, enjoy the website!</h3>
+	<h2><p style="color: green;">Ver 1.0.04</p></h2>
+	<p style="color: limegreen;"><h2>Update: <p style="color: yellow;">May 25th</p></h2>
+	<h3>Welcome to <u>The Adventures of Crizion</u> Website! Where you will be able to explore all the original characters that I wish to be featured in future entertainment of any kind! <p style="color: yellow;">Wow, its been a month already since the last update, For this update, the UI of the fanart gallery has been changed to make viewing easier and to prepare for future things :). Secondly, all Reptilians have their descriptions, Yay!  More descriptions will come eventually! Finally, the ages shown here are still not final and may be subject to change.(It's only with like 2 characters atp).</p> Thats all I have to share, enjoy the website!</h3>
 <h1>Socials:</h1>
 <h3>
     <a href="https://www.tiktok.com/@zegatroxproductions">
@@ -652,33 +680,22 @@ Time passed after the seeming end of the war, each species had a chance to regro
 </br>
 </p>
 </div>
-<div class="info-page" id="fanart-info">
-    <a class="back-button" onclick="goBack()">← Back</a>
+<div class="info-page fanart-container" id="fanart-info">
+<a class="back-button" onclick="goBack()">← Back</a>
     <h1>Fanart Gallery</h1>
-    <p>Here you can find Talented Artists work related to The Adventures of Crizion, if you want to see your's here someday, just tag me in a post or messsage me at one of my social media accounts! Spots may become limited eventully!
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-"Streching!", Izzy, By: <a href="https://www.tiktok.com/@oobo_3310">@oobo_3310</a> on TikTok.
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-<img src="https://i.imgur.com/PW0dCcv.jpeg" width="725" height="875" alt="Your Image">
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-"Temporary Happiness", Epister, By: <a href="https://www.tiktok.com/@kusari_gatana">@kusari_gatana</a> on TikTok.
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-<img src="https://i.imgur.com/8gBqeAK.jpeg" width="725" height="875" alt="Your Image">	    
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-"Poised", Garvoch, By:  <a href="https://www.tiktok.com/@scarrydragon">scarrydragon</a> on Tiktok
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-<img src="https://i.imgur.com/qbcVp9g.jpeg" width="725" height="875" alt="Your Image">
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-"Royal Warrior Outfit", Anya, By:  <a href="https://www.tiktok.com/@scarrydragon">@sccarydragon</a> on Tiktok
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
-<img src="https://i.imgur.com/Pgk2Fjy.png" width="725" height="975" alt="Your Image">
-<hr style="border: 0; height: 1px; background-color: lightblue; width: 100%; margin: 0.5em auto;">
+    <p>This page is for talented artists that have created work related to <u>The Adventures of Crizion</u>! Want yours featured? Just tag me or message me from one of my media accounts! :D</p>
 
+    <!-- Image Page Display -->
+    <div class="fanart-page">
+        <div class="top-text" id="image-text"></div>
+        <img id="fanart-image" src="" width="725" height="875" alt="Fanart Image">
+    </div>
 
-
-
-
-</p>
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+    <button id="prev-btn" onclick="prevImage()">&lt;</button>
+    <button id="next-btn" onclick="nextImage()">&gt;</button>
+</div>
 </div>
 
 <div class="info-page" id="species-info">
@@ -822,7 +839,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Opportunist</p>
         <p><strong>Birthday:</strong> January 13th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Vester is a well-known highly wanted criminal in the Reptilian kingdom. He is the leader of a small gang, his three other members are named: Bob, Rob, and Frank, despite their illegal actions they commit together, they treat each other like family. Vester’s story begins with being born into the chain of criminals. His father, Christopher, was a mob boss across this chain. Chirstopher taught Vester everything he knew about the art of thievery. Vester grew up then to start working for his father at 16. Vester’s respect for his father grew over time, even when Christopher divorced his wife, Vester still seemed to learn more about life being around his father. But one day on the year Vester was 16, A gang war broke out. Christopher went to support his men while he told Vester to stay, but Vester didn’t listen. Vester watched the war commence behind cover, wondering how he could support his father. As knives were being thrown and Reptilians were being stabbed, Vester saw an opportunity to put the war in his dads favor. But at the same time, Chirstopher finally noticed that Vester was nearing crossfire and let his guard down. A second later, a heated knife impaled his chest plate, cutting clean through Christophers vitals. Vester notices this and runs over to his father. His father died on the spot, not even getting to say any last words. Vester sat in silence for a moment, but it wasn’t too long before he was about to get attacked, but Vester quickly stopped it and returned with a counter, knocking out the attacker Reptilian. He then walked away, leaving the Reptilians around him speechless. Vester spent the rest of his years building off his father’s gang status, and eventually, rose straight to the top, his three lackeys were the ones that helped him get to this spot, which is why he considers them family. Also, he was able to construct a unique type of firearm called “The Heated Revolver” in the Reptilian kingdom. His desire now is to expand his operation to be the richest one amongst all species, while doing it alongside his lackeys.</p>
     </div>
 
 	<div class="info-page" id="character10-info">
@@ -835,7 +852,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Nomad</p>
         <p><strong>Birthday:</strong> November 12th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Iris is a masterful and calm monk who specializes in training in the Reptilian Kingdom. He prays under the blue snake, the god of wisdom, in hopes that he will honor them until death. Iris started his life like a lot of reptilians, but it wasn’t until he hit adulthood that he realized he was capable of so much more. He ran away from his family at age 20 to explore the world. He found many different wonders, training under different species that had masterful tactics, and continuously meeting other explorers like Igor along the way. Through a half a decade of searching, he finally found the cave of the wisdom snake, although the figure he found didn’t reveal the snake figure, he knew deep down it was them. The snake offered advice to Iris that would change his life even more than it already has, after that day he met with the snake, he knew his purpose. After another year, he returned to the Reptilian Kingdom. He started to train disciples in the Reptilian army to see if anyone could match the threats that were to come, but he failed. During this time, The Dark Skies War also occurred, which left Igor fighting on the battlefield to save as many lives as he could. But after The Dark Skies War had ended, he vanished to start his own life again in uncharted Reptilian territory. For the next 18 years after the war, he dedicated himself to praying each day to the blue snake, all while finding a worthy disciple out of the blue, and that disciple would be right around the corner. Iris’s dream is to train the chosen disciple to save the world and fulfill his duty that the blue snake had bestowed upon him.</p>
     </div>
 
 	<div class="info-page" id="character11-info">
@@ -848,7 +865,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Nomad</p>
         <p><strong>Birthday:</strong> September 6th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Abigail is a genius medical scientist and doctor in the Reptilian kingdom. She finds peace in making sure everyone is in top condition before taking care of herself. Abigail’s life came with immediate loss to her mother. After a few days of her being born, along with her two brothers beforehand, Abigails mother died of an unknown disease. For the next few years, their father went into a depression that often ended every night with him buying a bottle of liquor. So, the eldest brother took care of the middle brother and Abigail by himself after finding a job. During The Dark Skies war, they remained safe in a bunker, but their dad went missing during the chaos. After the events of the war though, Abigails big brother was able to afford an education for them, and Abigail took full advantage of it. While her middle brother dropped out and later joined Vester’s gang, Abigail stayed in school to pursue her education. She learned that she wanted to go into the medicine field; after doing well in testing, she was given the opportunity. Everything seemed to go smoothly from there, Abigail has developed cures for many diseases over the past 4 years and has treated thousands of wounds effectively. From the hurt warriors during monster attacks too medicines developments for a simple cold, she could do it. She was awarded for her many achievements and his made lifelong friends with Reptilians like Linden who are always on the battlefield getting hurt. Her eldest brother went on to become a great businessman. Abigail could not be happier, saving and protecting the lives of all Reptilians. Abigails dream is to continue to walk down this path and to make her mother proud for when Abigail gets to meet her.</p>
     </div>
 
 	<div class="info-page" id="character12-info">
@@ -861,7 +878,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Hero</p>
         <p><strong>Birthday:</strong> June 29th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Linden is a hearty frontline warrior of the Reptilian Kingdom. He has spent his whole life being a shield for others, ensuring that they will not have to go through any pain as they reach for victory. Linden was born in a litter of unknown Reptilians, no one was sure if the other eggs were brothers and sisters of each other. But after the mess was sorted out. Linden specifically was put into a training program to become a warrior. As he grew up, the training only got more harsh. The program they were in was treated unfairly and was built to push Reptilians beyond their normal limits. For 11 years since he was 5, Linden endured this pain. He made many friends at the training camp, that was the only reason he hasn’t attempted to flee or disobey they grounds, its what kept that fire burning inside of him. But then there came a day where one of his good friends couldn’t keep up with the training regime, Reptilians who couldn’t keep up were whipped abusively. Just as the general was about to slash at Lindens friend, Linden stepped in and took the hit. Everyone around him in the camp stared in silence, no one had ever taken the hits for someone else before. The general didn’t know what to do either, frustrated, he just walked away and ordered everyone to keep going, and so Linden and his friend did. After the training was finished, Linden was promoted to a frontliner, where he would take a big shield out on the battlefield. He absolutely hated the shields design though and went to an engineer for guidance. Together they created the box shield, a compressed shield that when slammed to the ground, it expands, and when its done, can be folded back up and put on his back. Now for a next few years and currently, he protects the frontlines of his comrades and friends from threats around the Reptilian Kingdom. Lindens dream is to continue his pursuit in protection, and he also wishes to be a father someday.</p>
     </div>
 
 	<div class="info-page" id="character13-info">
@@ -874,7 +891,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Neutral</p>
         <p><strong>Birthday:</strong> February 15th</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Dave is a jolly old fat Reptilian that enjoys his days fishing and drinking away the nights. He always looks out for his family no matter what, even if it means committing multiple unethical acts. The beginning of Daves life was all about fishing. Dave and his brother, who was Crizions dad, were born into a local family fish shop. When he was old enough to learn how, Dave and his brother would fish every single day. Sometimes Dave and his brother got along, sometimes they fought, it was never a dull moment while sitting near the beachside. As they grew older, they started to dabble in their own interests. Dave liked the fishing gig just fine, but his brother wanted to be a warrior for the Reptilian army. Once they both reached adulthood, Dave’s brother went to become the greatest warrior ever, while Dave stayed and pursued the fishing business. Years passed, with it, his father and mother. The fish business was a huge success in the end, in fact it was such a success, Dave got tired of it. He went to sell the business to a Reptilian named Fishstick, and didn’t look back. Now spending the time, he has at local bars drinking with others, he has no regrets, and life was great. That was until The Dark Skies War came to be, while he was called in for defense, no invasion passed beyond the underground chamber, leaving him safe. But the same couldn’t be said for his brother, who took an arrow to the head. Dave couldn’t believe this could happen, he had never experienced a loss like this before. He carried on with his life after, but one day, he heard a bunch of higher ups sullying the legacy of his great brother warrior and let’s just say….we don’t hear from them again. Dave ended up going back to fishing though, remembering the times he had with his brother. Daves new dream is to watch over his brothers son, Crizion, and make sure no one else in the family gets harmed.</p>
     </div>
 
 	<div class="info-page" id="character14-info">
@@ -887,7 +904,7 @@ Other species are coming soon!
 	<p><strong>Role:</strong> Nomad</p>
         <p><strong>Birthday:</strong> December 22nd</p>
         <hr>
-        <p><strong>Description:</strong> Coming Soon!</p>
+        <p><strong>Description:</strong> Pyrana is a body builder Reptilian who emphasizes increasing her bulk over anything else in life. She somehow fits into all kinds of groups with her strong personality and feats, making her a likeable person by all. Pyrana’s life started on farm, plain and simple. Her father was in the farm business for a long time, and it was mostly successful. But as Pyrana’s father grew older, it started to slow. Both her mother and father were hoping for boys to help with the hard labor, but all they could get was one female. Her father and mother was distressed, but at the same time, there was nothing they could do. As Pyrana grew older, she would do more easy weight chores while she would watch her father work himself out. One day, her father broke his back, leaving him unable to do the heavy lifting farm activities. This would be the great moment where Pyrana was done doing her sissy-like chores and started to heavy lift. She started to pump iron religiously until she couldn’t, she would work every muscle until it was sore. She started to lift more weight than her dad currently could and proceeded to quickly pass the most he had ever carried. Her father and mother were truly proud of her feat, but she didn’t stop there. After The Dark Skies War, she took part in many different weightlifting competitions, going from place to place to show off her strength. Soon enough, she became an icon for all female Reptilians out there, making crappy but still motivational speeches and being the face of female strength. Today, she is still bypassing many men who come by her, and her will to pump iron never vanished. Pyrana’s dream is to become the strongest Reptilian in the world, while spreading the word and motivating others at the same time.</p>
     </div>
 
 	<div class="info-page" id="character15-info">
@@ -1346,37 +1363,53 @@ Other species are coming soon!
     </div>
 
 <script>
-        function showCharacterInfo(characterId) {
-    document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-    document.querySelector('.main-page').style.display = 'none';
+    const images = [
+        { src: "https://i.imgur.com/PW0dCcv.jpeg", text: '"Stretching!", Izzy, By: <a href="https://www.tiktok.com/@oobo_3310">@oobo_3310</a>' },
+        { src: "https://i.imgur.com/8gBqeAK.jpeg", text: '"Temporary Happiness", Epister, By: <a href="https://www.tiktok.com/@kusari_gatana">@kusari_gatana</a>' },
+        { src: "https://i.imgur.com/qbcVp9g.jpeg", text: '"Poised", Garvoch, By: <a href="https://www.tiktok.com/@scarrydragon">@scarrydragon</a>' },
+        { src: "https://i.imgur.com/Pgk2Fjy.png", text: '"Royal Warrior Outfit", Anya, By: <a href="https://www.tiktok.com/@scarrydragon">@scarrydragon</a>' }
+    ];
 
-    let intro = document.querySelector('.intro-text');
-    if (intro) {
-        intro.style.display = 'none';
-        intro.style.visibility = 'hidden';
+    let currentIndex = 0;
+
+    function updateImage() {
+        const imgElement = document.getElementById("fanart-image");
+        const textElement = document.getElementById("image-text");
+        const prevButton = document.getElementById("prev-btn");
+        const nextButton = document.getElementById("next-btn");
+
+        if (imgElement && textElement) {
+            imgElement.src = images[currentIndex].src;
+            textElement.innerHTML = images[currentIndex].text;
+        } else {
+            console.error("Missing elements in HTML structure.");
+        }
+
+        // Disable/Enable buttons based on position
+        prevButton.disabled = (currentIndex === 0);
+        nextButton.disabled = (currentIndex === images.length - 1);
     }
-    document.querySelector(`#${characterId}`).style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
-function goBack() {
-    document.querySelectorAll('.info-page').forEach(page => page.style.display = 'none');
-    const mainPage = document.querySelector('.main-page');
-    mainPage.style.display = 'block';
-
-    let intro = document.querySelector('.intro-text');
-    if (intro) {
-        intro.style.display = 'block';
-        intro.style.visibility = 'visible';
+    function nextImage() {
+        if (currentIndex < images.length - 1) {
+            currentIndex++;
+            updateImage();
+        }
     }
 
-    requestAnimationFrame(() => {
-        const newScrollY = lastScrollPercentage * document.body.scrollHeight;
-        window.scrollTo({ top: newScrollY, behavior: 'smooth' });
-    });
-}
+    function prevImage() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateImage();
+        }
+    }
 
-    </script>
+    function loadFanartGallery() {
+        updateImage();
+    }
+
+    document.addEventListener("DOMContentLoaded", loadFanartGallery);
+</script>
 <div class="intro-text" style="text-align: center;">
 	<h2><i>This Website is Copyrighted by <p style="font-weight: 1000;">Zegatrox Productions ©2015</p>
  	All rights reserved.</i></h2>
