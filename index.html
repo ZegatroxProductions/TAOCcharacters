@@ -204,6 +204,46 @@ fanart-image[src="https://i.imgur.com/AA3tfNW.jpeg"] {
         white-space: normal;
         hyphens: auto;
     }
+.toggle-wrapper {
+        max-width: 600px;
+        margin: 2em auto;
+        font-family: sans-serif;
+    }
+
+    .toggle-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background: #222;
+        color: white;
+        padding: 1em;
+        border-radius: 8px;
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+        transform: rotate(180deg);
+    }
+
+    .toggle-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        background: #333;
+        color: #fff;
+        padding: 0 1em;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .toggle-content.open {
+        padding: 1em;
+        max-height: 500px; /* adjust as needed */
+    }
 }
     </style>
 
@@ -710,8 +750,78 @@ Time passed after the seeming end of the war, each species had a chance to regro
 <div class="info-page fanart-container" id="fanart-info">
 <a class="back-button" onclick="goBack()">← Back</a>
     <h1>Fanart Gallery</h1>
-    <p>This page is for talented artists that have created work related to <u>The Adventures of Crizion</u>! Want yours featured? Just tag me or message me from one of my media accounts! :D</p>
+    <p>This page is for talented artists that have created work related to <u>The Adventures of Crizion</u>! Want yours featured? Just tag me or message me from one of my media accounts!</p>
+</br>
+<h2>Honorary Members:</h2>
+</br>
+<img src="https://i.imgur.com/ZtZjHbr.png" alt="TikTok Icon" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.tiktok.com/@saijirain"style="font-size: 30px;">@saijirain</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Steps Example</title>
+  <style>
+    .toggle-wrapper {
+        max-width: 600px;
+        margin: 2em auto;
+        font-family: sans-serif;
+    }
 
+    .toggle-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background: #222;
+        color: white;
+        padding: 1em;
+        border-radius: 8px;
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+        transform: rotate(180deg);
+    }
+
+    .toggle-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        background: #333;
+        color: #fff;
+        padding: 0 1em;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .toggle-content.open {
+        padding: 1em;
+        max-height: 500px; /* adjust as needed */
+    }
+  </style>
+</head>
+<body>
+
+<div class="toggle-wrapper">
+    <div class="toggle-header" onclick="toggleSteps()">
+        <span>How do I become an Honorary Member? How do I get a gold star by my fanart?</span>
+        <span class="arrow" id="arrow">▼</span>
+    </div>
+<div class="toggle-content" id="steps">
+            To become an honorary member, you must:
+            	<li>Make 3 Or more fanarts of my characters in a good quailty verision of your artstyle (basically just means doodles dont countribute)</li>
+	    </br>
+            To get a gold star by your fanart, you must:
+            	<li>Draw a full body of the character! (Ask me about bottom halfs please!)</li>
+	    	<li>Reflect the characters personailty (feel free to ask me what there like!)</li>
+	    	<li>Pass the standard bar for art qualitiy (Its not super high but please do not get discouraged if I neglect :(</li>
+	    </br>
+	    	Please dont get discouraged by this! I want you to have fun drawing my characters, thats what matters the most to me! This is only for artists that really want or kindly contribute to the title in a website no one cares about :p
+    </div>
+</div>
     <!-- Image Page Display -->
     <div class="fanart-page">
         <div class="top-text" id="image-text"></div>
@@ -1391,6 +1501,7 @@ Other species are coming soon!
 
 <script>
     const images = [
+	{ src: "https://i.imgur.com/SiP4KCq.jpeg", text: '<p style="color: yellow;">⭐ "Combat Protocol, Engaged!", Charolette, By: <a href="https://www.tiktok.com/@saijirain">@saijirain</p></a>' },
 	{ src: "https://i.imgur.com/1lapTvR.png", text: '"Relaxed", Anya, By: <a href="https://www.tiktok.com/@saijirain">@saijirain</a>' },
 	{ src: "https://i.imgur.com/3f0pwow.png", text: '"Party!", Izzy, By: <a href="https://www.tiktok.com/@sailor_scoutj">@sailor_scoutj</a>' },
 	{ src: "https://i.imgur.com/Mdic88c.jpeg", text: '"Hey! I finally got fanart!", Zegatrox, By: <a href="https://www.tiktok.com/@shamelesstrix">@shamelesstrix</a>' },
@@ -1448,6 +1559,13 @@ Other species are coming soon!
     }
 
     document.addEventListener("DOMContentLoaded", loadFanartGallery);
+  function toggleSteps() {
+    const content = document.getElementById("steps");
+    const arrow = document.getElementById("arrow");
+
+    content.classList.toggle("open");
+    arrow.classList.toggle("rotate");
+  }
 </script>
 <div class="intro-text" style="text-align: center;">
 	<h2><i>This Website is Copyrighted by <p style="font-weight: 1000;">Zegatrox Productions ©2015</p>
